@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace NoteEditor.GLDrawing
 {
+    /// <summary>
+    /// 小節線の描画担当？
+    /// </summary>
     public class GLLineDrawer : SingletonMonoBehaviour<GLLineDrawer>
     {
         [SerializeField]

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace NoteEditor.GLDrawing
 {
+    /// <summary>
+    /// ノートの描画担当？
+    /// </summary>
     public class GLQuadDrawer : SingletonMonoBehaviour<GLQuadDrawer>
     {
         [SerializeField]

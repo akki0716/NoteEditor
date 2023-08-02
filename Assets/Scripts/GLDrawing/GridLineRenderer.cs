@@ -30,7 +30,7 @@ namespace NoteEditor.GLDrawing
                 beatLineColor1;
 
         float BeatLineLengthFactor(int beat) =>
-            beat % (EditData.LPB.Value * 4) == 0 ?
+            beat % (EditData.LPB.Value * 4) == 0 ?//1小節ごと
                 1.0f :
             beat % EditData.LPB.Value == 0 ?
                 1.05f :
