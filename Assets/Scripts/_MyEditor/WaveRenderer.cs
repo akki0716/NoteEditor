@@ -21,7 +21,12 @@ public class WaveRenderer : MonoBehaviour
     [SerializeField]
     int imageWidth;
 
+    /// <summary>
+    /// どれぐらいのサンプリングレート数を保持しておくか
+    /// </summary>
     [SerializeField]
+    int samplePoolSize;
+
     float[] samples;
 
     Texture2D texture;
@@ -45,6 +50,8 @@ public class WaveRenderer : MonoBehaviour
         texture.SetPixels(Enumerable.Range(0, imageWidth).Select(_ => Color.clear).ToArray());
         texture.Apply();
         image.texture = texture;
+
+        samples = new float[samplePoolSize];
     }
 
     void Update()
